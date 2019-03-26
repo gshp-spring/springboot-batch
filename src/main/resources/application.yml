@@ -1,0 +1,20 @@
+spring: 
+    data: 
+        mongodb: 
+            host: localhost 
+            port: 27017 
+            database: hosp
+server:
+  port: 2020     
+---
+logging:
+  level:
+    #ROOT: DEBUG
+    org.springframework.web: ERROR
+    com.nisum: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: /Users/my/debug.log
+  
+  

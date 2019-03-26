@@ -1,0 +1,13 @@
+---
+ 
+
+applications:
+- name: poc-spring
+  memory: 256M
+  instances: 1
+  
+  domain: cf-tcpapps.io
+  path: build/libs/poc-spring-0.1.0.jar
+
+  
+ 
